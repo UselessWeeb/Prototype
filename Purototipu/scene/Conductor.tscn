@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://4ex2awviugj3"]
+
+[ext_resource type="Script" path="res://script/Conductor.cs" id="1_qx3gy"]
+
+[node name="Conductor" type="AudioStreamPlayer"]
+script = ExtResource("1_qx3gy")
+
+[node name="StartTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

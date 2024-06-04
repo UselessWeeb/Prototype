@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxmo5xlmtvt4r"]
+
+[ext_resource type="Script" path="res://script/loader/ChartLoad.cs" id="1_r3rco"]
+
+[node name="LoadJson" type="Node2D"]
+script = ExtResource("1_r3rco")

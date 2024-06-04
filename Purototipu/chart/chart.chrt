@@ -1,0 +1,14 @@
+--this is a comment, by anychance, this will not be read
+--Each note will be represent as (place, note, type, duration(0 for normal note))
+BPM:100{
+	(1, 2, Normal, 0),
+	(2, 4, Hold, 5),
+	(4, 6, Normal, 0),
+}
+
+BPM:120{
+	(1, 8, Normal, 0),
+	(2, 9, Hold, 5),
+	(4, 13, Normal, 0),
+	(4, 19, Normal, 0),
+}

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpurq8wm0n6dx"]
+
+[ext_resource type="PackedScene" uid="uid://4ex2awviugj3" path="res://scene/Conductor.tscn" id="1_qpjcw"]
+[ext_resource type="Script" path="res://script/Play.cs" id="1_xog4y"]
+[ext_resource type="AudioStream" uid="uid://b608ylu8miccb" path="res://music/music.mp3" id="2_oe5gt"]
+[ext_resource type="PackedScene" uid="uid://ny2nmoyhpc55" path="res://scene/ButtonHandler.tscn" id="3_df124"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xog4y")
+conductorPath = NodePath("Conductor")
+
+[node name="Conductor" parent="." instance=ExtResource("1_qpjcw")]
+stream = ExtResource("2_oe5gt")
+Path = "res://chart/chart.chrt"
+
+[node name="Hit1" parent="." instance=ExtResource("3_df124")]
+position = Vector2(305, 577)
+
+[node name="Hit2" parent="." instance=ExtResource("3_df124")]
+position = Vector2(495, 578)
+
+[node name="Hit3" parent="." instance=ExtResource("3_df124")]
+position = Vector2(678, 577)
+
+[node name="Hit4" parent="." instance=ExtResource("3_df124")]
+position = Vector2(890, 576)

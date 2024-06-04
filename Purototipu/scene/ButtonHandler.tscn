@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ny2nmoyhpc55"]
+
+[ext_resource type="Script" path="res://script/ButtonHandler.cs" id="1_kx5s4"]
+[ext_resource type="Texture2D" uid="uid://cud42882uii56" path="res://sprite/Blue-idk.png" id="1_wlfo5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiumh"]
+size = Vector2(46, 46)
+
+[node name="TFYouCallthis" type="Area2D"]
+script = ExtResource("1_kx5s4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_yiumh")
+
+[node name="Blue-idk" type="Sprite2D" parent="."]
+position = Vector2(0.500003, 1)
+scale = Vector2(0.476563, 0.46875)
+texture = ExtResource("1_wlfo5")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
